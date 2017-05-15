@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:40255,300,500,700);
+* {
+	font-family:Roboto,Arial;
+	font-size:12px
+}
+html {
+    color: #333;
+	font-size: inherit;
+}
+body {
+	height: 100%;
+	background-color: inherit;
+    color: inherit;
+	margin:0;
+	font-size: inherit;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+}
