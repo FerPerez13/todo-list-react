@@ -1,9 +1,22 @@
 import React from 'react';
 
-function Form() {
-  return (
-    <p>Aqui estarán las tareas a realizar</p>
-  );
-}
+import Toolbar from '../components/Toolbar';
+import TodoItem from '../components/TodoItem';
 
-module.exports = Form;
+export default class TodoList extends React.Component {
+  render() {
+    return (
+      <div>
+        <div className="boxTodoList">
+          <Toolbar />
+          <div className="todo-list">
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
+          </div>
+          <div className="button-new" />
+        </div>
+      </div>
+    );
+  }
+}

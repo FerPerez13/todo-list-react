@@ -9,6 +9,7 @@ html {
 }
 body {
 	height: 100%;
+    width: 100%;
 	background-color: inherit;
     color: inherit;
 	margin:0;
@@ -22,4 +23,125 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently */
+}
+
+.toolbar {
+	background-color: red;
+	display: inline-flex;
+	width: 100%;
+	min-height:5%;
+}
+
+.toolbar-text {
+	font-size: 20px;
+	display: inline;
+	color: white;	
+	padding: 15px;
+}
+
+.boxTodoList {
+    display: flex;
+	flex-direction: column;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	font-size: inherit;
+}
+
+.todo-list{
+    flex-grow: 1;
+	height: 0;
+	box-sizing: border-box;
+	padding: 10px;
+	overflow: auto;
+	font-size: inherit;
+}
+
+/* ---- Targetas ---- */
+.todo-card {
+	background-color: greenyellow;
+    color:inherit;
+	display:inline-block;
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 5px;
+	margin-bottom:5px;
+	clear: both;
+	font-size: inherit;
+}
+
+.card-content {
+    display: flex;
+}
+
+/* Zona de borrar */
+.delete-box {
+    display: inline-flex;
+    flex: 1 6 10%;
+    order: 1;
+}
+.delete-box:hover {
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url('images/delete.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1 6 10%;
+    order: 1;
+}
+
+/* Contenido del TODO */
+.info-box {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 20px;
+    flex: 3 1 80%;
+    order: 2
+
+}
+.todo-title {
+	font-size: 20px;
+	color: white;	
+}
+.todo-description {
+	font-size: 15px;
+	display: inline;
+	color: grey;	
+}
+
+/* Zona de editar */
+.edit-box {
+    display: inline-flex;
+    flex: 1 6 10%;
+    order: 3;
+}
+.edit-box:hover {
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url('images/edit.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1 6 10%;
+    order: 3;
+}
+
+/* ---- Boton Nueva Targeta ---- */
+
+.button-new{
+    border: 0;
+	display:block;
+	border-radius:50px;
+	text-align:center;
+	cursor:pointer;
+	text-decoration:none;
+	position:fixed;
+	bottom: 10px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	background-color: red;
+	background-image:url("images/add.png");
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:20px;
 }
